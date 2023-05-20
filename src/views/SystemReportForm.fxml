@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="719.0" layoutX="138.0" layoutY="152.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/System%20Reports.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="101.0" onAction="#dailyReportOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #3498db; -fx-background-radius: 10;" text="Daliy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="255.0" layoutY="101.0" onAction="#monthlyReportOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #a55eea; -fx-background-radius: 10;" text="Monthly" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="448.0" layoutY="101.0" onAction="#annuallyReportOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #fa8231; -fx-background-radius: 10;" text="Annually" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="48.0" layoutY="42.0" prefHeight="49.0" prefWidth="213.0" text="System Reports">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="270.0" layoutY="71.0" prefHeight="2.0" prefWidth="675.0" />
+      <AnchorPane fx:id="mainPane2" layoutY="153.0" prefHeight="497.0" prefWidth="989.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="managementLogContext" prefHeight="211.0" prefWidth="563.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../theme/css/ItemForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLoginFormController">
+   <children>
+      <Pane layoutY="-2.0" opacity="0.68" prefHeight="3.0" prefWidth="594.0" style="-fx-background-color: #000000;" />
+      <Text fill="#fc9744" layoutX="38.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast Food Shop">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="3.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/chicken-wings.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="282.0" layoutY="27.0" prefHeight="145.0" prefWidth="272.0">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="261.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtUserName" layoutX="13.0" layoutY="8.0" onKeyPressed="#userName_Key_Released" prefHeight="31.0" prefWidth="243.0" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Admin User Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="230.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/male_user_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <PasswordField fx:id="txtPassword" layoutX="15.0" layoutY="8.0" onKeyPressed="#password_Key_Released" prefHeight="31.0" prefWidth="243.0" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Admin Password">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblHide" layoutX="230.0" layoutY="9.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressed" prefHeight="24.0" prefWidth="24.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/hide.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnAdminLogin" alignment="BASELINE_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" layoutX="19.0" layoutY="150.0" onAction="#adminLoginOnAction" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: linear-gradient(to right top, #ff2ca4, #ff348a, #ff4572, #ff585d, #ff6a4b, #ff6b47, #ff6c43, #ff6d3f, #ff5b49, #ff4854, #ff3260, #ff116e); -fx-background-radius: 15;" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="29.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="397.0" layoutY="188.0" text="©Powered by ">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="188.0" text="Pasan Pahasara" textFill="#116fbf">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="152.0" prefHeight="35.0" prefWidth="158.0" text="Forget Your Password ?" textFill="#ff116e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="170.0" layoutX="67.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/customer-satisfaction.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

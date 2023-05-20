@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyIncomeFormController">
+   <children>
+      <TableView fx:id="tblReport" layoutX="29.0" layoutY="5.0" opacity="0.71" prefHeight="516.0" prefWidth="936.0" stylesheets="@../theme/css/ItemForm.css">
+        <columns>
+          <TableColumn fx:id="colMonth" prefWidth="180.0" text="Month" />
+          <TableColumn fx:id="colOrderCount" prefWidth="271.0" text="Order Count" />
+            <TableColumn fx:id="colItemSoldQty" prefWidth="302.0" text="Item Sold Qty" />
+            <TableColumn fx:id="colCost" prefWidth="182.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

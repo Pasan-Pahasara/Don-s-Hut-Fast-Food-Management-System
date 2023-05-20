@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="688.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierViewDetailsController">
+   <children>
+      <ImageView fitHeight="688.0" fitWidth="989.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/fast-food-junk-food-concept.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="92.0" onAction="#customerDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #3498db; -fx-background-radius: 10;" text="Customer Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="259.0" layoutY="92.0" onAction="#itemDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #27AE60; -fx-background-radius: 10;" text="Item Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="46.0" layoutY="32.0" prefHeight="49.0" prefWidth="447.0" text="Cashier View Details Form">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="432.0" layoutY="63.0" prefHeight="0.0" prefWidth="514.0" />
+      <AnchorPane fx:id="mainPane" layoutY="149.0" prefHeight="539.0" prefWidth="989.0" />
+   </children>
+</AnchorPane>

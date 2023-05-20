@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="688.0" prefWidth="989.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementViewDetailsController">
+   <children>
+      <ImageView fitHeight="688.0" fitWidth="989.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/fast-food-junk-food-concept.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="32.0" prefHeight="49.0" prefWidth="447.0" text="Management View Details">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="419.0" layoutY="58.0" prefHeight="3.0" prefWidth="528.0" />
+      <AnchorPane fx:id="mainPane1" layoutY="144.0" prefHeight="545.0" prefWidth="989.0" />
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="93.0" onAction="#customerDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #3498db; -fx-background-radius: 10;" text="Customer Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="250.0" layoutY="92.0" onAction="#cashierDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #a55eea; -fx-background-radius: 10;" text="Cashier Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="441.0" layoutY="91.0" onAction="#orderDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #fa8231; -fx-background-radius: 10;" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="90.0" onAction="#itemDetailsOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #27AE60; -fx-background-radius: 10;" text="Item Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

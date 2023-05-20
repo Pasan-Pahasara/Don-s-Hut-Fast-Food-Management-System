@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerFormContext" prefHeight="545.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerViewDetailsTableFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="40.0" layoutY="43.0" opacity="0.71" prefHeight="475.0" prefWidth="908.0" stylesheets="@../theme/css/ItemForm.css">
+         <columns>
+            <TableColumn fx:id="tblCusId" prefWidth="101.0" text="ID" />
+            <TableColumn fx:id="tblCusTitle" prefWidth="59.0" text="Title" />
+            <TableColumn fx:id="tblCusName" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="tblCusAddress" prefWidth="109.0" styleClass="lastCell" text="Address" />
+            <TableColumn fx:id="tblCusCity" prefWidth="103.0" styleClass="lastCell" text="City" />
+            <TableColumn fx:id="tblCusProvince" prefWidth="109.0" styleClass="lastCell" text="Province" />
+            <TableColumn fx:id="tblCusCode" prefWidth="79.0" styleClass="lastCell" text="Code" />
+            <TableColumn fx:id="tblCusDate" prefWidth="112.0" styleClass="lastCell" text="Date" />
+            <TableColumn fx:id="tblCusTime" prefWidth="115.0" styleClass="lastCell" text="Time" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="784.0" layoutY="4.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="161.0" promptText="Search Customer ID" style="-fx-background-color: transparent; -fx-border-radius: 30; -fx-border-color: #888686;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="743.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/searchimage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

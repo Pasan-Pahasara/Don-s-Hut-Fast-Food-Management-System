@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeeFormContext" prefHeight="688.0" prefWidth="989.0" stylesheets="@../theme/css/ItemForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierManageFormController">
+   <children>
+      <ImageView fitHeight="688.0" fitWidth="989.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/fast-food-junk-food-concept.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="59.0" prefWidth="326.0" text="Cashier Manage Form">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="370.0" layoutY="44.0" prefHeight="4.0" prefWidth="577.0" />
+      <AnchorPane layoutX="42.0" layoutY="82.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpID" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="E00-001" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Cashier ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="299.0" layoutY="82.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpName" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="Pasan" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Cashier Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="42.0" layoutY="141.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpPassword" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="*********" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Password" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="141.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpNic" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="200195885222" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="NIC" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="42.0" layoutY="198.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpContact" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="0758966324" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Contact" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="203.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpDescription" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="Cashier" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Description" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="42.0" layoutY="261.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpAddress" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="Galle" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="299.0" layoutY="261.0" prefHeight="42.0" prefWidth="242.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtEmpSalary" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="217.0" promptText="25000.00" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Salary" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="846.0" layoutY="644.0" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #27AE60; -fx-background-radius: 10;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblEmployee" layoutX="41.0" layoutY="319.0" opacity="0.71" prefHeight="311.0" prefWidth="908.0">
+         <columns>
+            <TableColumn fx:id="colEmpId" prefWidth="109.0" text="ID" />
+            <TableColumn fx:id="colEmpName" prefWidth="129.0" text="Cashier Name" />
+            <TableColumn fx:id="colEmpPassword" prefWidth="114.0" text="Password" />
+            <TableColumn fx:id="colEmpNic" prefWidth="145.0" styleClass="lastCell" text="NIC" />
+            <TableColumn fx:id="colEmpContact" prefWidth="114.0" styleClass="lastCell" text="Contact" />
+            <TableColumn fx:id="colEmpDescription" prefWidth="112.0" styleClass="lastCell" text="Description" />
+            <TableColumn fx:id="colEmpAddress" prefWidth="104.0" styleClass="lastCell" text="Address" />
+            <TableColumn fx:id="colEmpSalary" styleClass="lastCell" text="Salary" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="789.0" layoutY="65.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="161.0" promptText="Search Cashier ID" style="-fx-background-color: transparent; -fx-border-radius: 30; -fx-border-color: #888686;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="748.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/searchimage.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="820.0" layoutY="280.0" onAction="#updateCashierBtnOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #F39C12; -fx-background-radius: 10;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="822.0" layoutY="230.0" onAction="#deleteBtnOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: ff3838; -fx-background-radius: 10;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemFormContext" prefHeight="545.0" prefWidth="989.0" stylesheets="@../theme/css/ItemForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManageFormController">
+   <children>
+      <TableView fx:id="tblItem" layoutX="40.0" layoutY="43.0" opacity="0.71" prefHeight="475.0" prefWidth="908.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="118.0" text="Code" />
+            <TableColumn fx:id="colName" prefWidth="244.0" text=" Name" />
+            <TableColumn fx:id="colQty" prefWidth="169.0" text="Qty On Hand" />
+            <TableColumn fx:id="colPackSize" prefWidth="205.0" styleClass="lastCell" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrice" minWidth="3.0" prefWidth="171.0" styleClass="lastCell" text="Unit Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="784.0" layoutY="4.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="161.0" promptText="Search Item Code" style="-fx-background-color: transparent; -fx-border-radius: 30; -fx-border-color: #888686;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="743.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/searchimage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

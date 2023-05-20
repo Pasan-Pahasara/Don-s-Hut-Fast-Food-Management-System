@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.YearlyIncomeController">
+   <children>
+      <TableView fx:id="tblReport" layoutX="29.0" layoutY="5.0" opacity="0.71" prefHeight="516.0" prefWidth="936.0" stylesheets="@../theme/css/ItemForm.css">
+         <columns>
+            <TableColumn fx:id="colYear" prefWidth="222.0" text="Year" />
+            <TableColumn fx:id="colOrderCount" prefWidth="270.0" text="Order Count" />
+            <TableColumn fx:id="colItemSoldQty" minWidth="0.0" prefWidth="275.0" text="Item Sold Qty" />
+            <TableColumn fx:id="colCost" prefWidth="168.0" text="Cost" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

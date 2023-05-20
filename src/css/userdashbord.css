@@ -1,0 +1,28 @@
+.sidebar{
+    -fx-background-color:#333645;
+}
+.sidebar-btn{
+    /*-fx-background-color:Select#161616;*/
+    /*-fx-background-color: red;*/
+    /*-fx-border-color: white;*/
+}
+.button:hover{
+    -fx-background-color:#3A3B3C;
+    -fx-border-color: #00A2D3;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.button:pressed{
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+.button{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.bottembar{
+    -fx-background-color: #333645;
+}
+/*.sidebar-btn:active{*/
+/*    -fx-background-color:#00A2D3;*/
+/*}*/
